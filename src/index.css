@@ -1,0 +1,96 @@
+
+/* Universal dropdown */
+select {
+  width: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #080e1b !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(66, 230, 194, 0.35) !important;
+  font-family: inherit;
+  font-size: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Dropdown variantlari */
+select option {
+  background-color: #0b1424 !important;
+  color: #ffffff !important;
+}
+
+/* Tanlangan variant */
+select option:checked {
+  background-color: #123b49 !important;
+  color: #42e6c2 !important;
+}
+
+/* Fokus holati */
+select:focus {
+  background-color: #080e1b !important;
+  color: #ffffff !important;
+  border-color: #42e6c2 !important;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 230, 194, 0.12);
+}
+
+/* Universal media — planshet va kichik noutbuk */
+@media (max-width: 1024px) {
+  select {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+
+/* Telefonlar */
+@media (max-width: 768px) {
+  select {
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 9px;
+  }
+}
+
+/* Kichik telefonlar */
+@media (max-width: 480px) {
+  select {
+    font-size: 12px;
+    padding: 7px 8px;
+    border-radius: 8px;
+  }
+}
+
+/* Juda kichik telefonlar */
+@media (max-width: 360px) {
+  select {
+    font-size: 11px;
+    padding: 6px;
+  }
+}
+
+/* Light rejimida ham qora rang */
+html.light select,
+body.light select,
+.light select {
+  background-color: #080e1b !important;
+  color: #ffffff !important;
+  border-color: rgba(66, 230, 194, 0.35) !important;
+}
+
+html.light select option,
+body.light select option,
+.light select option {
+  background-color: #0b1424 !important;
+  color: #ffffff !important;
+}
+
+/* Harakatlarni kamaytirish */
+@media (prefers-reduced-motion: reduce) {
+  select {
+    transition: none;
+  }
+}
